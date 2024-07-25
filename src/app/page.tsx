@@ -1,9 +1,10 @@
-import Link from "next/link";
-
+import Link from "next/link"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
-    <div className={`flex justify-center items-center h-screen`}>
+    <div className={`flex flex-col gap-5 justify-center items-center h-screen`}>
+      <p className={`text-2xl font-bold text-center text-wrap`}>Clique no link abaixo e faça o seu cartão.</p>
       <Link
         href={`https://triban.co/bIcYC`}
         className={`
